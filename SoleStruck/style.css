@@ -1,0 +1,60 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    
+}
+
+
+.navigation, .sign-in-signup {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li, .sign-in-signup li {
+    margin: 0 1rem;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #f00;
+}
+
+.menu {
+    display: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navigation, .sign-in-signup {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+}
